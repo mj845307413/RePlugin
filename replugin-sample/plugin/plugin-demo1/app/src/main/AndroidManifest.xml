@@ -59,7 +59,7 @@
             android:name=".activity.theme.ThemeDialogActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+            android:theme="@android:style/Theme.Dialog" />
 
         <!-- NoTitleBarFullScreen -->
         <activity
@@ -73,7 +73,6 @@
             </intent-filter>
         </activity>
 
-
         <!-- receivers -->
         <receiver android:name=".receivers.PluginDemo1Receiver">
             <intent-filter>
@@ -82,6 +81,8 @@
         </receiver>
 
         <!-- service -->
+        <service
+            android:name=".service.PluginDemoAppService" />
         <service
             android:name=".service.PluginDemoService1"
             android:process=":bg" />
